@@ -1,0 +1,24 @@
+https://spring.io/guides/tutorials/spring-security-and-angular-js/
+
+Run with mvn spring-boot:run
+ALT: Package with mvn package then java -jar target/*.jar to run it.
+
+- Created a Spring Initializr project with web and security (see Spring folder)
+- Added a home page and some webjars to make it work.. to get angular working we need (from org.webjars.npm):
+    - angular__common
+    - angular__compiler
+    - angular__platform-browser
+    - angular__http
+    - angular__platform-browser-dynamic
+    - angular__core
+    :: Should probably work out what each of these is and what it does.
+    :: "AppModule is not defined" - probably still need to do some work there.
+    :: On the website, old angularjs is angular, while modern angular is @angular, where the dep uses angular__ prefix.
+
+
+This approach isn't necessarily the most effective as it's using plain old javascript via the webjar includes. It's
+pragmatic of course for the purposes of this tutorial, but more sensible to use the proper nodejs-driven typescript
+stuff when doing it properly. I'm doing this mostly to get the back-end sussed.
+
+
+Created hello.js which is initially just the boilerplate to get angular up and running.
