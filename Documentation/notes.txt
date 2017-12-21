@@ -22,3 +22,8 @@ stuff when doing it properly. I'm doing this mostly to get the back-end sussed.
 
 
 Created hello.js which is initially just the boilerplate to get angular up and running.
+
+Created the /resource controller.
+    curl localhost:8090/resource
+    {"timestamp":1513867249756,"status":401,"error":"Unauthorized","message":"Full authentication is required to access this resource","path":"/resource"}
+
